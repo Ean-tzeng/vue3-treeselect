@@ -6442,7 +6442,7 @@ var instanceId = 0;
     if (this.async && this.defaultOptions) this.handleRemoteSearch();
 
     if (this.multiple) {
-      console.log('ean', this.modelValue);
+      console.log('ean', this.modelValue.value);
     }
   },
   unmounted: function unmounted() {

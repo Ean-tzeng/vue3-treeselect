@@ -1992,7 +1992,7 @@ export default {
     if (this.alwaysOpen) this.openMenu()
     if (this.async && this.defaultOptions) this.handleRemoteSearch()
     if (this.multiple) {
-      console.log('ean', this.modelValue)
+      console.log('ean', this.modelValue.value)
     }
   },
 
