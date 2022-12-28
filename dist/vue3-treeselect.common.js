@@ -6444,7 +6444,7 @@ var instanceId = 0;
     if (this.async && this.defaultOptions) this.handleRemoteSearch();
 
     if (this.multiple) {
-      console.log('ean', this.modelValue, this.multiple, props);
+      console.log('ean', JSON.parse(JSON.stringify(this.modelValue)));
     }
   },
   unmounted: function unmounted() {
