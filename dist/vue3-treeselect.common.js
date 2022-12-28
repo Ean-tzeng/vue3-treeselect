@@ -6451,7 +6451,7 @@ var instanceId = 0;
     if (this.async && this.defaultOptions) this.handleRemoteSearch();
 
     if (this.multiple) {
-      this.setInitValue(this.modelValue);
+      this.forest.selectedNodeIds = this.modelValue;
     }
   },
   unmounted: function unmounted() {

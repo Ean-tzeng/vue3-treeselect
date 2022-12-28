@@ -1999,7 +1999,7 @@ export default {
     if (this.alwaysOpen) this.openMenu()
     if (this.async && this.defaultOptions) this.handleRemoteSearch()
     if (this.multiple) {
-      this.setInitValue(this.modelValue)
+      this.forest.selectedNodeIds = this.modelValue
     }
   },
 
