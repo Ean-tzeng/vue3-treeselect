@@ -5386,7 +5386,6 @@ var instanceId = 0;
     },
     initialize: function initialize() {
       var options = this.async ? this.getRemoteSearchEntry().options : this.options;
-      debugger;
 
       if (Array.isArray(options)) {
         // In case we are re-initializing options, keep the old state tree temporarily.
@@ -5971,7 +5970,6 @@ var instanceId = 0;
     normalize: function normalize(parentNode, nodes, prevNodeMap) {
       var _this16 = this;
 
-      debugger;
       var normalizedOptions = nodes.map(function (node) {
         return [_this16.enhancedNormalizer(node), node];
       }).map(function (_ref, index) {
