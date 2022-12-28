@@ -1984,8 +1984,9 @@ export default {
       if ($menu) $menu.scrollTop = this.menu.lastScrollPosition
     },
     setInitValue(v) {
-
-      console.log('ean', v)
+      v.forEach(i => {
+        this.addValue(i)
+      })
     }
   },
 

@@ -6444,7 +6444,11 @@ var instanceId = 0;
       if ($menu) $menu.scrollTop = this.menu.lastScrollPosition;
     },
     setInitValue: function setInitValue(v) {
-      console.log('ean', v);
+      var _this23 = this;
+
+      v.forEach(function (i) {
+        _this23.addValue(i);
+      });
     }
   },
   created: function created() {
