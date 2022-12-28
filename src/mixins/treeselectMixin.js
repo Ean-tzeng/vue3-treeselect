@@ -926,6 +926,7 @@ export default {
         ? this.getRemoteSearchEntry().options
         : this.options
 
+      debugger
       if (Array.isArray(options)) {
         // In case we are re-initializing options, keep the old state tree temporarily.
         const prevNodeMap = this.forest.nodeMap
@@ -1528,6 +1529,7 @@ export default {
     },
 
     normalize(parentNode, nodes, prevNodeMap) {
+      debugger
       let normalizedOptions = nodes
         .map(node => [this.enhancedNormalizer(node), node])
         .map(([node, raw], index) => {
