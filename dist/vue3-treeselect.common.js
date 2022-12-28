@@ -6444,7 +6444,7 @@ var instanceId = 0;
     if (this.async && this.defaultOptions) this.handleRemoteSearch();
 
     if (this.multiple) {
-      console.log('ean', this.modelValue, this.alwaysOpen);
+      console.log('ean', this.modelValue, this.multiple);
     }
   },
   unmounted: function unmounted() {
