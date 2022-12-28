@@ -6454,6 +6454,7 @@ var instanceId = 0;
 
     if (this.multiple) {
       console.log('ean', JSON.parse(JSON.stringify(this.modelValue)));
+      debugger;
     }
   },
   unmounted: function unmounted() {

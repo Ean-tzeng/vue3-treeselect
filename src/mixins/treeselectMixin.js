@@ -1995,6 +1995,7 @@ export default {
     if (this.async && this.defaultOptions) this.handleRemoteSearch()
     if (this.multiple) {
       console.log('ean', JSON.parse(JSON.stringify(this.modelValue)))
+      debugger
     }
   },
 
