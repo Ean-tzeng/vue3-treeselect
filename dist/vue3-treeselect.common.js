@@ -6431,6 +6431,9 @@ var instanceId = 0;
       var $menu = this.getMenu(); // istanbul ignore else
 
       if ($menu) $menu.scrollTop = this.menu.lastScrollPosition;
+    },
+    setInitValue: function setInitValue(v) {
+      console.log('ean', v);
     }
   },
   created: function created() {
@@ -6444,8 +6447,7 @@ var instanceId = 0;
     if (this.async && this.defaultOptions) this.handleRemoteSearch();
 
     if (this.multiple) {
-      console.log('ean', JSON.parse(JSON.stringify(this.modelValue)));
-      debugger;
+      this.setInitValue(this.modelValue);
     }
   },
   unmounted: function unmounted() {

@@ -1981,6 +1981,10 @@ export default {
       // istanbul ignore else
       if ($menu) $menu.scrollTop = this.menu.lastScrollPosition
     },
+    setInitValue(v) {
+
+      console.log('ean', v)
+    }
   },
 
   created() {
@@ -1994,8 +1998,7 @@ export default {
     if (this.alwaysOpen) this.openMenu()
     if (this.async && this.defaultOptions) this.handleRemoteSearch()
     if (this.multiple) {
-      console.log('ean', JSON.parse(JSON.stringify(this.modelValue)))
-      debugger
+      this.setInitValue(this.modelValue)
     }
   },
 
