@@ -5072,7 +5072,9 @@ var instanceId = 0;
      * For most cases, just use `v-model` instead.
      * @type {?Array}
      */
-    modelValue: null,
+    modelValue: {
+      type: Array
+    },
 
     /**
      * Which kind of nodes should be included in the `value` array in multi-select mode.
