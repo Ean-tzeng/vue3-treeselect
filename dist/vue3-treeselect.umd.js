@@ -6449,6 +6449,10 @@ var instanceId = 0;
     if (!this.options && !this.async && this.autoLoadRootOptions) this.loadRootOptions();
     if (this.alwaysOpen) this.openMenu();
     if (this.async && this.defaultOptions) this.handleRemoteSearch();
+
+    if (this.multiple) {
+      console.log('ean', this.modelValue);
+    }
   },
   unmounted: function unmounted() {
     // istanbul ignore next
